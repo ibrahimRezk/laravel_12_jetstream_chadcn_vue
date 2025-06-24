@@ -1,5 +1,5 @@
 <script setup pages>
-import { useAppearance } from '@/composables/useAppearance';
+import { useAppearance } from '@/composables/useAppearance.js'; 
 import { Monitor, Moon, Sun } from 'lucide-vue-next';
 
 const { appearance, updateAppearance } = useAppearance();

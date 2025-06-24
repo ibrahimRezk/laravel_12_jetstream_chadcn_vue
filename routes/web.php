@@ -40,9 +40,4 @@ Route::middleware([
 
 
 
-    // check         <!-- <AvatarImage v-if="showAvatar" :src="user.avatar!" :alt="user.name" /> -->
-
-
-    // fix composables files 
-
     // convert :href="route('profile.edit')"  to   :href="route('profile.show')"
