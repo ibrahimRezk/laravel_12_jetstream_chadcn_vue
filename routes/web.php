@@ -49,3 +49,6 @@ Route::middleware([
         // and in these two pages convert gray to zinc 
 
         // also convert gray to zinc in these comonents  modal  dialogModal textinput secondaybutton
+
+
+        // check changes in sidebar.vue and sidebarInset components to add background image effect
