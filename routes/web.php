@@ -38,6 +38,14 @@ Route::middleware([
     // "./src/**/*.{js,vue,ts}",
 
 
-
+/// update files composables/useAppearnce.js and useInitials.js
 
     // convert :href="route('profile.edit')"  to   :href="route('profile.show')"
+
+    // update page    pages/profile/show to the current one here
+    // update formSection.vue and actionSection.vue components to this: 
+        // first div         <div class="md:grid  ">
+        // second div        <div class="mt-5 md:col-span-2">
+        // and in these two pages convert gray to zinc 
+
+        // also convert gray to zinc in these comonents  modal  dialogModal textinput secondaybutton
