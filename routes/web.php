@@ -17,13 +17,24 @@ Route::middleware([
     'auth:sanctum',
     config('jetstream.auth_session'),
     'verified',
-])->group(function () {
-    Route::get('/dashboard', function () {
-        return Inertia::render('Dashboard');
-    })->name('dashboard');
+    ])->group(function () {
+        Route::get('/dashboard', function () {
+            return Inertia::render('Dashboard');
+        })->name('dashboard');
 });
 
 
+// Route::get('home' , function(){
+//     return Inertia::render('Home');
+// });
+
+Route::get('/home', function () {
+    return Inertia::render('Home');
+});
+
+
+// ready blocks
+// https://tailblocks.cc/
 
 
 
@@ -51,4 +62,10 @@ Route::middleware([
         // also convert gray to zinc in these comonents  modal  dialogModal textinput secondaybutton
 
 
-        // check changes in sidebar.vue and sidebarInset components to add background image effect
+        // check changes in these files: sidebar.vue and sidebarInset components to add background image effect
+
+        // add these lines to resources/js/app.js and ss.js
+        
+// This will set light / dark mode on page load...
+// import { initializeTheme } from './composables/useAppearance';
+// initializeTheme();

@@ -5,6 +5,9 @@ import createServer from "@inertiajs/vue3/server";
 import { resolvePageComponent } from "laravel-vite-plugin/inertia-helpers";
 import { ZiggyVue } from "../../vendor/tightenco/ziggy";
 
+import { initializeTheme } from './composables/useAppearance';
+
+
 const appName = import.meta.env.VITE_APP_NAME || "Laravel";
 
 createServer((page) =>
@@ -27,3 +30,8 @@ createServer((page) =>
         },
     })
 );
+
+
+
+// This will set light / dark mode on page load...
+initializeTheme();

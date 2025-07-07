@@ -2,6 +2,8 @@
 import { useAppearance } from '@/composables/useAppearance.js'; 
 import { Monitor, Moon, Sun } from 'lucide-vue-next';
 
+
+
 const { appearance, updateAppearance } = useAppearance();
 
 const tabs = [
@@ -16,7 +18,7 @@ const tabs = [
         class="inline-flex gap-1 rounded-lg bg-neutral-100 p-1 dark:bg-neutral-800"
     >
         <button
-            v-for="{ value, Icon, label } in tabs"
+            v-for="{ value, Icon, label } in tabs" 
             :key="value"
             @click="updateAppearance(value)"
             :class="[
